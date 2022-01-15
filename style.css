@@ -15,10 +15,10 @@ body{
 
 /*menu Section */
 .menu-section{
-    /* display: grid;
-    grid-template-columns: repeat(2 ,1fr); */
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    /* display: flex;
+    justify-content: space-between; */
     height: 50px;
     align-items: center;
 }
@@ -32,12 +32,14 @@ nav > ul{
 }
 nav ul li{
     list-style: none;
-    margin-right: 30px;
+    /* margin-right: 70px; */
+   
 }
 nav ul li a{
     text-decoration: none;
     font-size: 16px;
     color: #3A3A3A;
+    margin-right: 50px;
 }
 
 /* close menu Section */
@@ -77,7 +79,7 @@ nav ul li a{
     transform: rotate(30deg);
 }
 .fas{
-    margin-left: 1px;
+    margin-left: 10px;
     margin-top: 0px;
     
 }
@@ -144,6 +146,15 @@ span{
 .star p{
     color: #787885;
 }
+.see-more{
+    color: #E02C6D;
+    text-align: right;
+    padding: 20px;
+    margin-right: 50px;
+
+    
+
+}
 /* 
 clouse service section */
 .trafic-section{
@@ -160,11 +171,11 @@ clouse service section */
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-column-gap: 40px;
-    /* text-align: center; */
+   
     
 }
 .traffic{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 
@@ -175,4 +186,55 @@ clouse service section */
 .traffic p{
     color: #5E6366;
     line-height: 25px;
+}
+/* footer section */
+footer{
+    height: 260px;
+    background-color: #08090A;
+    color: #fff;
+    text-align: center;
+    
+
+
+    
+}
+.fab{
+    background-color: #2D2F30;
+    padding: 15px ;
+    margin-right: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+footer h2{
+    padding-top: 60px;
+  
+}
+footer p{
+    margin-bottom: 20px;
+}
+
+
+
+/* Resposive section */
+@media (max-width: 670px){
+    .menu-section{
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        
+    }
+    .headline-section{
+        /* display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 500px; */
+        
+        
+    }
+    .service{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .trafic-detals{
+        grid-template-columns: 1fr;
+    }
+   
 }

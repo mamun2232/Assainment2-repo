@@ -13,12 +13,10 @@ body{
 
 
 
-/*menu Section */
+/*----------------menu Section---------------- */
 .menu-section{
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
-    /* display: flex;
-    justify-content: space-between; */
     height: 50px;
     align-items: center;
 }
@@ -41,12 +39,12 @@ nav ul li a{
     font-size: 16px;
     color: #3A3A3A;
     margin-right: 20px;
-    /* padding: 0px 20px; */
+
     font-weight: 500;
     
 }
 
-/* close menu Section */
+/*------------------------ close menu Section--------------- */
 .headline-section{
     
     display: flex;
@@ -67,6 +65,7 @@ nav ul li a{
     color: #3A3A3A;
     width: 500px;
     margin-top: 5px;
+    margin-bottom: 30px;
 
 }
 .headline-image{
@@ -75,9 +74,8 @@ nav ul li a{
 .headline-image img{
     height: 414px;
     width: 440px;
-    transition: .3s;
-
-
+    transition: 3s;
+    
 }
 .headline-image img:hover{
     transform: rotate(30deg);
@@ -85,11 +83,10 @@ nav ul li a{
 .fas{
     margin-left: 10px;
     margin-top: 0px;
-    
 }
 
 
-/* Extera button Section */
+/* --------------Extera button Section ---------------*/
 .Button{
     text-decoration: none;
     color: #fff;
@@ -98,8 +95,12 @@ nav ul li a{
     border-radius: 41px;
     margin-top: 10px;
 }
+.Button:hover{
+    background-color: #FB8200;
+    color: #fff;
+}
 
-/* Service section */
+/*------------------- Service section--------------- */
 .service-section{
     margin-top: 200px;
 }
@@ -113,16 +114,14 @@ nav ul li a{
 .service{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    /* gap: 20px; */
+    
     grid-row-gap: 40px;
     
-
-
 }
+
 .photo-tramnil{
    box-shadow: 0px 0px 5px black;
     width: 329px;
-    /* height: 476px; */
     padding-left: 20px;
     box-sizing: border-box;
     padding: 10px 13px;
@@ -159,10 +158,10 @@ span{
     
 
 }
-/* 
-clouse service section */
+/* -------------------clouse service section----------- */
 .trafic-section{
     margin-top: 150px;
+    margin-bottom: 60px;
     
 }
 .trafic-section .title{
@@ -191,7 +190,7 @@ clouse service section */
     color: #5E6366;
     line-height: 25px;
 }
-/* footer section */
+/* ----------------footer section------------------ */
 footer{
     height: 260px;
     background-color: #08090A;
@@ -219,10 +218,12 @@ footer p{
 
 
 
-/* Resposive css section */
-@media (max-width: 600px){
+/* -------------Resposive css section ----------------*/
+
+/*------------------- mobile device------------- */
+@media (max-width: 656px){
     .menu-section{
-        /* display: grid; */
+        
         grid-template-columns: 1fr;
     
     }
@@ -262,11 +263,19 @@ footer p{
     .trafic-detals{
         grid-template-columns: 1fr;
     }
-   
-    
+    .see-more{
+        margin-right: 0px;
+        padding-right: 0px;
+       }
+       nav ul{
+           padding-left: 0px;
+       }
    
 }
-@media(max-width: 850px){
+
+ /*-------------------- trab devices----------------- */
+
+@media (min-width: 657px) and (max-width: 910px){
     .service{
         grid-template-columns: 1fr 1fr;
         justify-content: center;
@@ -295,6 +304,10 @@ footer p{
     }
     .left-menu{
         text-align: center;
+    }
+    .see-more{
+     margin-right: 0px;
+     padding-right: 0px;
     }
 
 }

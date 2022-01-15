@@ -1,6 +1,10 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Work Sans', sans-serif;
+    
 }
 .container{
     width: 80%;
@@ -10,14 +14,133 @@ body{
 
 
 /*menu Section */
+.menu-section{
+    /* display: grid;
+    grid-template-columns: repeat(2 ,1fr); */
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+.left-menu .logo-title{
+    font-size: 26px;
+    color: #3A3A3A;
+}
 nav > ul{
     display: flex;
 
 }
 nav ul li{
     list-style: none;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 nav ul li a{
     text-decoration: none;
+    font-size: 16px;
+    color: #3A3A3A;
+}
+
+/* close menu Section */
+.headline-section{
+    
+    display: flex;
+    height: 350px;
+    align-items: center;
+    margin-top: 50px;
+}
+.headline{}
+.headline .headline-title{
+    font-size: 52px;
+    line-height: 70px;
+    color: #3A3A3A;
+    margin-bottom: 20px;
+}
+.headline p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A3A3A;
+    width: 500px;
+    margin-top: 5px;
+
+}
+.headline-image{
+    background-image: url(images/Circle\ design.svg);
+}
+.headline-image img{
+    height: 414px;
+    width: 440px;
+    transition: .3s;
+
+
+}
+.headline-image img:hover{
+    transform: rotate(30deg);
+}
+.fas{
+    margin-left: 1px;
+    margin-top: 0px;
+    
+}
+
+
+/* Extera button Section */
+.Button{
+    text-decoration: none;
+    color: #fff;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    border-radius: 41px;
+    margin-top: 10px;
+}
+
+/* Service section */
+.service-section{
+    margin-top: 200px;
+}
+.service-section .title{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3A3A3A;
+}
+
+.services{}
+.service{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    /* gap: 20px; */
+    grid-row-gap: 40px;
+    
+
+
+}
+.photo-tramnil{
+   box-shadow: 0px 0px 5px black;
+    width: 329px;
+    /* height: 476px; */
+    padding-left: 20px;
+    box-sizing: border-box;
+    padding: 10px 13px;
+    border-radius: 5px;
+   
+}
+.service .photo-tramnil img{
+    width: 300px;
+    height: 256px;
+}
+span{
+    font-size: 10px;
+    color: #FB8200;
+
+}
+.star .price{
+    margin-left: 20px;
+    font-size: 16px;
+    color: #5E6366;
+    
+}
+.detals h2{
+  color: #3A3A3A;
+}
+.star p{
+    color: #787885;
 }
